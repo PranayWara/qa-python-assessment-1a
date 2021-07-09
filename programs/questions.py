@@ -233,14 +233,10 @@ def seven (input):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    pass
-#     list = []
-#     for i in range (input,1):
-#         list.append()
-#     return list
-# print (eight(8))
-
-
+    num = 1
+    for i in range(1,input + 1):
+       num = num*i
+    return num
     # <QUESTION 9>
 
     # Given a string and a char, returns the position in the String where the char first appears.
