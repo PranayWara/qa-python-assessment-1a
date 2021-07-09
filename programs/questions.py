@@ -65,9 +65,6 @@ def one(input1, input2):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
-    list = [input]
-    si = list.split()
-    sil = si.islower()
     pass
     # if si is 
     # else:
@@ -94,14 +91,15 @@ def two(input):
     # No Hints for this question
 
 def three(arg1):
-    if arg1 % 3 == 0:
+    if arg1 % 3 == 0 and arg1 % 5 == 0:
+        return 'fizzbuzz'
+    elif arg1 % 3 == 0:
         return 'fizz'
     elif arg1 % 5 == 0:
         return 'buzz'
-    elif arg1 % 3 == 0 and input % 5 == 0:
-        return 'fizzbuzz'
     else:
         return 'null'
+print (three(15))
 
     # <QUESTION 4>
 
