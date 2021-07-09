@@ -184,15 +184,16 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
-    pass
-#     if (input.find('cei') == True):
-#         return True
-#     elif (input.find('ie') == True) and (input.find('cie') == False):
-#         return True
-#     else:
-#         return False
-
-# print (six('ceiling'))
+    if "cie" in input:
+        return False
+    elif "cei" in input:
+        return True
+    elif "ei" in input:
+        return False
+    elif "ie" in input:
+        return True
+    else:
+        return True
     
 
 
@@ -285,12 +286,10 @@ def nine(inputString, char):
     # How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
 def ten(string, int, char):
-    lower = string.islower()
-    string_len = int(len(lower))
-    if int > string_len:
-        return False
-    elif lower[int] == char:
-        return True
-    else:
-        return False
-print (ten("The",2,'h'))
+    pass
+#     lower = string.islower()
+#     if lower[int] == char:
+#         return True
+#     else:
+#         return False
+# print (ten("The",2,'h'))
