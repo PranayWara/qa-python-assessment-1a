@@ -99,7 +99,6 @@ def three(arg1):
         return 'buzz'
     else:
         return 'null'
-print (three(15))
 
     # <QUESTION 4>
 
@@ -124,7 +123,14 @@ print (three(15))
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    pass
+    l = arg1.split()
+    result = []
+    for i in l:
+        sum = 0
+        for digit in str(i):
+            sum += int(digit)
+        result.append(sum)
+    return max(result)
 
 
     # <QUESTION 5>
@@ -154,6 +160,10 @@ def four(arg1):
 
 def five(input):
     pass
+    # input = input.split()
+    # for i in range (4):
+    #     dic = {'owner':input[1], 'file':input[2], 'encrypted': input[3], 'file size':input[4]}
+    #     if 'encrypted'
 
 
     # <QUESTION 6>
@@ -174,6 +184,15 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
+
+#     if (input.find('cei') == True):
+#         return True
+#     elif (input.find('ie') == True) and (input.find('cie') == False):
+#         return True
+#     else:
+#         return False
+
+# print (six('ceiling'))
     pass
 
 
@@ -192,8 +211,12 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    pass
+    lower = input.islower()
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    num = len([i for i in lower if i in vowels])
+    return num
 
+print(seven('Hello')
 
     # <QUESTION 8>
 
