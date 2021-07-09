@@ -291,4 +291,3 @@ def ten(string, int, char):
         return True
     else:
         return False
-print (ten("AAbb",1,'b'))
