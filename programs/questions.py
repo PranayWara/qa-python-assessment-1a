@@ -184,7 +184,7 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
-
+    pass
 #     if (input.find('cei') == True):
 #         return True
 #     elif (input.find('ie') == True) and (input.find('cie') == False):
@@ -193,7 +193,7 @@ def six(input):
 #         return False
 
 # print (six('ceiling'))
-    pass
+    
 
 
     # <QUESTION 7>
@@ -210,13 +210,11 @@ def six(input):
 
     # How do we ignore case in a String? help(str) may offer some insight.
 
-def seven(input):
-    lower = input.islower()
+def seven (input):
+    lower=input.lower()
     vowels = ['a', 'e', 'i', 'o', 'u']
-    num = len([i for i in lower if i in vowels])
-    return num
+    return len([i for i in lower if i in vowels])
 
-print(seven('Hello')
 
     # <QUESTION 8>
 
@@ -235,6 +233,11 @@ print(seven('Hello')
 
 def eight(input):
     pass
+#     list = []
+#     for i in range (input,1):
+#         list.append()
+#     return list
+# print (eight(8))
 
 
     # <QUESTION 9>
@@ -256,7 +259,12 @@ def eight(input):
     # Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-    pass
+    space = inputString.replace(' ', '')
+    index = space.find(char)
+    if index > 0:
+        return index + 1
+    else:
+        return index
 
 
     # <QUESTION 10>
@@ -277,4 +285,12 @@ def nine(inputString, char):
     # How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
 def ten(string, int, char):
-    pass
+    lower = string.islower()
+    string_len = int(len(lower))
+    if int > string_len:
+        return False
+    elif lower[int] == char:
+        return True
+    else:
+        return False
+print (ten("The",2,'h'))
